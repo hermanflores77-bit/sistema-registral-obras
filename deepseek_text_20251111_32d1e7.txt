@@ -1,0 +1,14 @@
+
+## Tecnologías Utilizadas
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- LocalStorage API
+
+## Instalación y Uso
+1. Descargar todos los archivos
+2. Abrir `index.html` en un navegador web
+3. Comenzar a registrar obras
+
+## Autor
+Sistema desarrollado para gestión de obras de construcción.

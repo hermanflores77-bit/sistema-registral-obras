@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Obra - Sistema Registral</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Registrar Nueva Obra</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="registro.html">Registrar Obra</a>
+                <a href="consultas.html">Consultas</a>
+            </nav>
+        </header>
+
+        <main>
+            <form class="obra-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre de la Obra:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación:</label>
+                    <input type="text" id="ubicacion" name="ubicacion" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo">Tipo de Obra:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Seleccionar...</option>
+                        <option value="residencial">Residencial</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="industrial">Industrial</option>
+                        <option value="publica">Pública</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha de Inicio:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="presupuesto">Presupuesto ($):</label>
+                    <input type="number" id="presupuesto" name="presupuesto" step="0.01" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn primary">Registrar Obra</button>
+                <a href="index.html" class="btn secondary">Cancelar</a>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
